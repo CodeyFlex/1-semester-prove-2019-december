@@ -7,10 +7,16 @@
 
 public class Main {
 
-    // TODO Din kode her
+    public static String hello(String navn) {
+        if (navn != null)
+                return "Hello " + navn;
+        else
+            navn = "World";
+            return "Hello " + navn;
+            }
 
-    public String hello(String navn) {
-        return "";
+    public static void main(String[] args) {
+        System.out.println(hello("András"));
+
     }
-
 }
