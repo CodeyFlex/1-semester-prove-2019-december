@@ -7,7 +7,7 @@
 
 public class Main {
 
-    public static String hello(String navn) {
+    public String hello(String navn) {
         if (navn != null)
                 return "Hello " + navn;
         else
@@ -16,7 +16,8 @@ public class Main {
             }
 
     public static void main(String[] args) {
-        System.out.println(hello("András!"));
+        Main l = new Main();
+        System.out.println(l.hello("András!"));
 
     }
 }

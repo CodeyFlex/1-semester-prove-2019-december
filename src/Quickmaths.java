@@ -9,15 +9,15 @@ import java.util.Scanner;
 
 public class Quickmaths {
 
-    static int gennemsnit(int a, int b) {
+    int gennemsnit(int a, int b) {
         return (a + b) / 2;
     }
 
-    static int sum(int a, int b) {
+    int sum(int a, int b) {
         return a + b;
     }
 
-    static void start() {
+    void start() {
         int endlessPain = 1;
         System.out.println("\n ***The Flexy Calculator***");
         do {
@@ -34,6 +34,7 @@ public class Quickmaths {
     }
 
     public static void main(String[] args) {
-        start();
+        Quickmaths l = new Quickmaths();
+        l.start();
     }
 }

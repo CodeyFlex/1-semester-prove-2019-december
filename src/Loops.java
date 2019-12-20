@@ -1,9 +1,4 @@
-/**
- * Developed by András Ács (acsandras@gmail.com)
- * Zealand / www.zealand.dk
- * Licensed under the MIT License
- * 17/12/2019
- */
+import java.util.Scanner;
 
 public class Loops {
 
@@ -22,26 +17,31 @@ public class Loops {
         l.waitingFor0();
     }
 
-    /**
-     * Viser en liste med brugere i konsollen
-     */
     public void printBrugereArr() {
-
-        // TODO Din kode her
+        for (int personList = 0; personList < brugere.length; personList++) {
+            System.out.println(brugere[personList]);
+        }
     }
 
-    /**
-     * Viser en liste med brugere i konsollen i omvendt rækkefølge
-     */
     public void printBrugereReverseArr() {
-
-        // TODO Din kode her
-
+        for (int personList = brugere.length - 1; personList >= 0; personList--) {
+            System.out.println(brugere[personList]);
+        }
     }
 
     public void waitingFor0() {
+        int i;
+        Scanner intScanner = new Scanner(System.in);
+        System.out.println("Waiting for the number 0! Write a number... ");
+        i = intScanner.nextInt();
 
-        // TODO Din kode her
- 
+        while (i != 0)
+        {
+            if (i >= 0)
+                System.out.println("Waiting for the number 0! Write a number... " + i);
+            i = intScanner.nextInt();
+            if (i == 0) ;
+            System.out.println("You typed 0. It's over!");
+        }
     }
 }
